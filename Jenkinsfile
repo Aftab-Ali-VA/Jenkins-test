@@ -29,9 +29,10 @@ pipeline {
         }
 
         stage('Archive Artifact') {
-            agent any
             steps {
                 echo "Archiving artifacts..."
+                echo "Current workspace: ${env.WORKSPACE}"
+                sh 'ls -la build/'
                 archiveArtifacts artifacts: 'build/hello', fingerprint: true
             }
         }
