@@ -2,6 +2,6 @@
 
 int main() {
     printf("Hello from Makefile build inside container!\n");
-    printf("Built using Jenkins declarative pipeline!\n");
+    printf("Testing github integration!\n");
     return 0;
 }
